@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The E-Millennial Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        background-color: #ffe8d6; /* Page background color */
+      }
+
+      .navbar {
+        background-color: #ffe9d6; /* Matches the light peach color */
+      }
+
+      .navbar-brand img {
+        /* max-height: 50px; */
+        max-height: 30px;
+        width: auto;
+      }
+
+      .navbar-nav {
+        flex-direction: row;
+        font-weight: 500;
+      }
+
+      .nav-item {
+        padding: 0 5px;
+      }
+
+      .about {
+        background-color: black;
+        color: white;
+        text-align: center;
+        /* padding: 2.5rem; */
+        width: 100%;
+        max-width: 100%; /* Ensure it aligns with other sections */
+      }
+
+      .container {
+        max-width: 1200px; /* Consistent width for all sections */
+      }
+
+      .shop-now-btn {
+        background-color: #ff6a00;
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+      .shop-now-btn:hover {
+        background-color: #e65c00;
+      }
+      .hero-text {
+        font-size: clamp(2rem, 5vw, 4rem);
+        font-weight: bold;
+        color: #ff6a00;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./Images/EMS (1).svg" alt="EMS Logo" />
+        </a>
+        <!-- Navbar Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#intro">Intro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#shop">Shop</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <!-- Cart -->
+          
+          <button id="cart-button" class="cart-button">
+             <i class="bi bi-cart"></i> (<span id="cart-count">(0)</span>)
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="row align-items-center mx-auto custom-container">
+        <!-- Text Section -->
+        <div
+          class="col-md-6 text-center text-md-start mb-4 mb-md-0 px-4 px-md-3"
+        >
+          <h1 class="hero-text">THE E-<br />MILLENIAL<br />STORE</h1>
+        </div>
+
+        <!-- Image Section -->
+        <div class="col-md-6 text-center px-4 px-md-3">
+          <img class="img-fluid" src="./Images/heroImage.svg" alt="heroImage" />
+        </div>
+      </div>
+
+      <!-- Shop Now Button -->
+      <div class="text-center mt-4">
+        <button class="shop-now-btn">SHOP NOW</button>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about" id="about">
+      <p>
+        E-Millennial Store is a hypothetical online store for gadgets we believe
+        every ‘Millennial’ or ‘Gen-Z’ should have today. We've got mobile
+        phones, laptops, smartwatches, and other gadgets. Explore all our
+        gadgets and choose the ones that suit you. E-Millennial Store is a
+        hypothetical online store for gadgets we believe every ‘Millennial’ or
+        ‘Gen-Z’ should have today. We've got mobile phones, laptops,
+        smartwatches, and other gadgets. Explore all our gadgets and choose the
+        ones that suit you.
+      </p>
+    </div>
+
+    <!-- Shop Section -->
+    <section class="shop-section align-items-center" id="shop">
+      <div class="gadgets align-items-center">
+        <div class="gadget-item" id="product-1">
+          <div class="image-container">
+            <img src="./Images/product1.png" alt="Samsung TV" />
+            <div class="overlay">
+              <p class="price"><u>Price:</u> <br />#500,000</p>
+            </div>
+          </div>
+          <p>SAMSUNG TV</p>
+          <button
+            class="add-to-cart"
+            data-id="1"
+            data-name="Samsung TV"
+            data-price="500000"
+          >
+            ADD TO CART
+          </button>
+        </div>
+        <div class="gadget-item" id="product-2">
+          <div class="image-container">
+            <img src="./Images/product2.png" alt="PIXEL 4a" />
+            <div class="overlay">
+              <p class="price">#250,000</p>
+            </div>
+          </div>
+          <p>PIXEL 4a</p>
+          <button
+            class="add-to-cart"
+            data-id="2"
+            data-name="PIXEL 4a"
+            data-price="250000"
+          >
+            ADD TO CART
+          </button>
+        </div>
+        <div class="gadget-item" id="product-3">
+          <div class="image-container">
+            <img src="./Images/product3.png" alt="PS 5" />
+            <div class="overlay">
+              <p class="price">#500,000</p>
+            </div>
+          </div>
+          <p>PS 5</p>
+          <button
+            class="add-to-cart"
+            data-id="3"
+            data-name="PS 5"
+            data-price="500000"
+          >
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="gadgets">
+        <div class="gadget-item" id="product-4">
+          <div class="image-container">
+            <img src="./Images/product4.png" alt="MACBOOK AIR" />
+            <div class="overlay">
+              <p class="price">#700,000</p>
+            </div>
+          </div>
+          <p>MACBOOK AIR</p>
+          <button
+            class="add-to-cart"
+            data-id="4"
+            data-name="MACBOOK AIR"
+            data-price="700000"
+          >
+            ADD TO CART
+          </button>
+        </div>
+        <div class="gadget-item" id="product-5">
+          <div class="image-container">
+            <img src="./Images/product5.png" alt="APPLE WATCH" />
+            <div class="overlay">
+              <p class="price">#200,000</p>
+            </div>
+          </div>
+          <p>APPLE WATCH</p>
+          <button
+            class="add-to-cart"
+            data-id="5"
+            data-name="APPLE WATCH"
+            data-price="200000"
+          >
+            ADD TO CART
+          </button>
+        </div>
+        <div class="gadget-item " id="product-6">
+          <div class="image-container">
+            <img src="./Images/product6.png" alt="AIR PODS" />
+            <div class="overlay">
+              <p class="price">#150,000</p>
+            </div>
+          </div>
+          <p>AIR PODS</p>
+          <button
+            class="add-to-cart"
+            data-id="6"
+            data-name="AIR PODS"
+            data-price="150000"
+          >
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopping Cart Button -->
+  
+  <!-- Shopping Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <h2>Your Shopping Cart</h2>
+  
+      <!-- Cart Items Section -->
+      <div id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+  
+      <!-- User Details Section -->
+      <form id="user-details-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+  
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+  
+        <label for="phone">Your Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+      </form>
+  
+      <!-- Total Amount Section -->
+      <div id="total-amount">Total Amount to be Paid: ₦0</div>
+  
+      <!-- Actions Section -->
+      <div class="actions">
+        <button id="continue-shopping">Continue Shopping</button>
+        <button id="checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <span class="brand">EMS</span>
+        </div>
+        <div class="credit">Designed and Crafted by a Frontend Ninja</div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://js.paystack.co/v2/inline.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

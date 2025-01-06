@@ -1,0 +1,335 @@
+/* General Styles */
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+   
+  
+  /* Shop Section */
+.shop-section {
+    text-align: center;
+    background-color: white;
+    /* padding: 2rem 1rem;  */
+    /* Outer padding to create space outside the grid */
+    
+  }
+  
+  .shop-section p {
+    margin-bottom: 1rem;
+  }
+  
+  .ourgad {
+    font-weight: bolder;
+    font-size: 28px;
+  }
+  
+  .shop-section .gadgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0px; 
+    padding: 0; /* No internal padding on the gadgets grid */
+    max-width: 1000px; /* Keeps content closer together for larger screens */
+    padding-left: 20px; /* Adds space on the left */
+    padding-right: 20px; /* Adds space on the right */
+    justify-content: center;
+  }
+  .gadgets {
+    margin: 0 auto; /* Centers the div horizontally */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; /* Adds spacing between items */
+    max-width: 1000px; /* Keeps the div from stretching too wide */
+  }
+  
+  .gadget-item {
+    text-align: center;
+    padding: 10px; /* Space inside each gadget item */
+    position: relative;
+  }
+  
+  .gadget-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%; /* Ensures the image takes up the full width of the container */
+    transition: opacity 0.3s ease, filter 0.3s ease; /* Smooth transition for opacity and filter */
+  }
+  
+  .image-container:hover img {
+    filter: brightness(80%); /* Darkens the image slightly on hover */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay .price {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  @media (max-width: 768px) {
+    .gadgets {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  
+    .gadget-item button {
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .overlay .price {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .gadget-item p {
+    font-weight: bold;
+  }
+
+  .gadget-item button {
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+   
+  /* Footer Section */
+  .footer-section {
+    background-color: black;
+    color: orange;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+
+   /* Custom Colors */
+.text-orange {
+    color: orange;
+  }
+  
+  .bg-orange {
+    background-color: orange;
+  }
+  
+  /* Navbar Customization */
+  .navbar>.container{
+    background-color: #FFE9D6; /* Matches the light peach color */
+    margin: 0px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .btn.bg-orange {
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+  }
+  
+   /* Custom Colors */
+.text-orange {
+    color: orange;
+  }
+  
+  .btn-warning {
+    background-color: orange;
+    border-color: orange;
+  }
+  
+  /* Card Customizations */
+  .card img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body h5 {
+    font-weight: bold;
+  }
+  
+  /* Footer Customizations */
+  .text-orange {
+    color: orange;
+  }
+  .about {
+    background-color: black;
+    color: white;
+    /* padding: 50px; */
+    text-align: center;
+    padding: 2.5rem;
+    width: 100vw;
+    max-width: 100%;
+  }
+  /* General Hero Section Spacing */
+.hero-section {
+    padding: 20px; /* Adjust padding around the section */
+  }
+  
+  /* Reduce Distance Between Columns */
+  .custom-container {
+    max-width: 1000px; /* Keeps content closer together for larger screens */
+    padding-left: 20px; /* Adds space on the left */
+    padding-right: 20px; /* Adds space on the right */
+  }
+  
+  /* Custom Column Spacing */
+  @media (min-width: 992px) {
+    .custom-container {
+      padding-left: 50px; /* Adjust distance from the left screen edge */
+      padding-right: 50px; /* Adjust distance from the right screen edge */
+    }
+  }
+  
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto; /* Center content horizontally */
+  }
+  
+  .footer .brand {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    right: 20px;
+  }
+  
+  .footer .credit {
+    font-size: 14px;
+    left: 50px;
+  }
+  button {
+  padding: 10px 15px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+button.active {
+  background-color: red;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  #cart-items {
+    margin-bottom: 20px;
+  }
+  
+  #cart-items .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  #cart-items .item button {
+    margin-left: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #total-amount {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #continue-shopping {
+    background-color: #ccc;
+  }
+  
+  #checkout {
+    background-color: #ff9900;
+    color: white;
+  }
+  
